@@ -3,6 +3,7 @@
 body{
     background-color: white;
 }
+
 .manrope {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -76,7 +77,6 @@ button{
   height: 80%;
 }
 .box{
-  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,6 @@ button{
 }
 .box > .left > h4{
   margin-left: 10%;
-  font-size: 15px;
   font-family: 'manrope';
   font-weight: 600;
   color: #ded6d6;
@@ -109,4 +108,109 @@ button{
   width: 90%;
   height: 100%;
 
+}
+/*********************QUICKQUERY PAGE******************************************/
+
+
+.boxy{
+  display: flex;
+}
+.boxy >.input{
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+}
+
+.boxy >.input > h4{
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: #011F2B;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-family: "manrope", sans-serif;
+}
+.vertical-hr {
+  height: 550px; /* Adjust height of the line */
+  border: none;
+  border-left: 2px solid #aba9a9b8; /* Adjust color and width as needed */
+  margin: 0 10px; /* Optional margin for spacing */
+}
+.boxx > h3{
+  font-size: large;
+  margin-left: 10%;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-family: "manrope", sans-serif;
+}
+
+.code-container {
+  background-color: #011F2B;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+ .placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+
+.copy-button {
+  width: 70px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.output {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  min-height: 300px; /* Adjust this value based on your desired minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+.spinner-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hljs {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+  flex: 1;
 }

@@ -8,10 +8,11 @@ function Home(){
     return(
         <>
         <div>
+
             <Header />
             <br />
             <Container style={{backgroundColor: "#011F2B" , borderRadius: 100}}>
-                <div className="box">
+                <div className="box" style={{ color: "white"}}>
                     <div className="left">
                     <br />
                     <br />
@@ -20,10 +21,10 @@ function Home(){
                     <h3>Craft Perfect</h3>
                     <h3>MongoDB Queries</h3>
                     <h3>in Seconds!</h3>
-                    <h4>QuickQuery is a versatile tool that effortlessly </h4>
-                    <h4>Generates and Optimizes MongoDB Queries. Simplifying</h4>
-                    <h4>your database management with our intuitive tool</h4>
-                    <h4>designed for speed and accuracy.</h4>
+                    <h4 style={{  fontSize: 15}}>QuickQuery is a versatile tool that effortlessly </h4>
+                    <h4 style={{  fontSize: 15}}>Generates and Optimizes MongoDB Queries. Simplifying</h4>
+                    <h4 style={{  fontSize: 15}}>your database management with our intuitive tool</h4>
+                    <h4 style={{  fontSize: 15}}>designed for speed and accuracy.</h4>
                     <br />
                     <button style= {{borderRadius : 120 , fontFamily: "manrope"}}>Get Started &nbsp;<ArrowRight /></button>
                     <br />
