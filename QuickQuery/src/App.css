@@ -236,3 +236,24 @@ button{
   text-align: center;
   font-weight: 600;
 }
+/********************************************FEATURES PAGE***********************************************/
+.grid{
+  margin-top: 20px;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: repeat(3 , 0.25fr);
+  row-gap: 30px;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.gradient-text {
+  background: linear-gradient(to right, #1F9D62, #01F466);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  font-family: "manrope";
+}
