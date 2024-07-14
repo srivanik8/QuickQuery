@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 function Community(){
 
-    const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState('');
 
   useEffect(() => {
@@ -17,10 +17,20 @@ function Community(){
   const fetchPosts = async () => {
     try {
       const response = await fetch('/api/posts');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json();
-      setPosts(data);
+      console.log('Received data:', data);  // Log the received data
+      if (Array.isArray(data)) {
+        setPosts(data);
+      } else {
+        console.error('Received data is not an array:', data);
+        setPosts([]);
+      }
     } catch (error) {
       console.error('Error fetching posts:', error);
+      setPosts([]);
     }
   };
 
@@ -115,13 +125,13 @@ function Community(){
         <button type="submit">Post</button>
       </form>
       <div className="posts-container">
-        {posts.map((post) => (
-          <div key={post._id} className="post">
-            <p>{post.content}</p>
-            <small>{new Date(post.createdAt).toLocaleString()}</small>
-          </div>
-        ))}
-      </div>
+  {Array.isArray(posts) && posts.map((post) => (
+    <div key={post._id} className="post">
+      <p>{post.content}</p>
+      <small>{new Date(post.createdAt).toLocaleString()}</small>
+    </div>
+  ))}
+</div>
     </div>
 
             </div>

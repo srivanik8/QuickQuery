@@ -1,6 +1,5 @@
 import express from 'express'
 import { MongoClient, ObjectId } from 'mongodb';
-import cors from 'cors';
 
 const app = express();
 app.use(express.json());
@@ -75,6 +74,17 @@ app.get('/api/get-queries', async (req, res) => {
       res.status(201).json({ message: "Post created", id: result.insertedId });
     } catch (error) {
       res.status(500).json({ message: "Error creating post" });
+    }
+  });
+
+
+  app.get('/api/posts', async (req, res) => {
+    try {
+      const posts = await Post.find().sort({ createdAt: -1 });
+      res.json(posts);
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+      res.status(500).json({ message: 'Server error' });
     }
   });
 

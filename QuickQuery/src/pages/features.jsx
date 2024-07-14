@@ -43,7 +43,7 @@ function Features(){
                     </Card>
                     <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
-                        <Link className="link" to="https://www.mongodb.com/community/"><Card.Title><Handshake /> &nbsp;Community</Card.Title></Link>
+                        <Link className="link" to="/community"><Card.Title><Handshake /> &nbsp;Community</Card.Title></Link>
                         <Card.Text>
                             Join a global community of developers
                         </Card.Text>
