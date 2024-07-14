@@ -214,3 +214,25 @@ button{
   overflow: auto;
   flex: 1;
 }
+
+/***************************QUICKSNIPPET PAGE**********************************************/
+.saved-queries {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 30px;
+  margin-left: 30px;
+}
+
+
+.query-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.query-item > h4{
+  font-family: "manrope";
+  text-align: center;
+  font-weight: 600;
+}

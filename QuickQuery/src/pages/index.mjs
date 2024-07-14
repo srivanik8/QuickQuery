@@ -28,6 +28,22 @@ app.post('/api/save-query', async (req, res) => {
     await client.close();
   }
 });
+app.get('/api/get-queries', async (req, res) => {
+    try {
+      await client.connect();
+      const database = client.db("quickquery");
+      const collection = database.collection("query");
+  
+      const queries = await collection.find({}).toArray();
+      
+      res.json(queries);
+    } catch (error) {
+      console.error("Error fetching queries:", error);
+      res.status(500).json({ message: "Error fetching queries" });
+    } finally {
+      await client.close();
+    }
+  });
 
 const port = process.env.PORT || 3000;
 app.listen(port, '0.0.0.0', () => {
