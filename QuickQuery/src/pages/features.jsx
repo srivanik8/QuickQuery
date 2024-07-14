@@ -7,6 +7,7 @@ import { History } from 'lucide-react';
 import { Handshake } from 'lucide-react';
 import { FileCode } from 'lucide-react';
 import { Github } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 
 function Features(){
@@ -26,7 +27,7 @@ function Features(){
                     <div className="grid">
                     <Card border="light" style={{ width: '18rem'  , fontFamily: "manrope" , fontWeight: "700"}}>
                         <Card.Body>
-                        <Card.Title><DatabaseZap /> &nbsp;QuickQuery</Card.Title>
+                        <Link className="link" to="/quickquery"><Card.Title><DatabaseZap /> &nbsp;QuickQuery</Card.Title></Link>
                         <Card.Text>
                             Craft queries in seconds in your preferred coding language.
                         </Card.Text>
@@ -34,7 +35,7 @@ function Features(){
                     </Card>
                     <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
-                        <Card.Title><History /> &nbsp;QuickSnippet</Card.Title>
+                        <Link className="link" to="/querysnippet"><Card.Title><History /> &nbsp;QuickSnippet</Card.Title></Link>
                         <Card.Text>
                             Safeguard your queries and revisit them anytime you want
                         </Card.Text>
@@ -42,7 +43,7 @@ function Features(){
                     </Card>
                     <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
-                        <Card.Title><Handshake /> &nbsp;Community</Card.Title>
+                        <Link className="link" to="https://www.mongodb.com/community/"><Card.Title><Handshake /> &nbsp;Community</Card.Title></Link>
                         <Card.Text>
                             Join a global community of developers
                         </Card.Text>
@@ -50,7 +51,7 @@ function Features(){
                     </Card>
                     <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
-                        <Card.Title><FileCode /> &nbsp;Documentation</Card.Title>
+                        <Link className="link" to="https://www.mongodb.com/docs/"><Card.Title><FileCode /> &nbsp;Documentation</Card.Title></Link>
                         <Card.Text>
                             Dive deep into mongoDB documentation and explore a wide range of resources
                         </Card.Text>
@@ -58,7 +59,7 @@ function Features(){
                     </Card>
                     <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
-                        <Card.Title><Github /> &nbsp;Github</Card.Title>
+                        <Link className="link" to="https://github.com/srivanik8/QuickQuery"><Card.Title><Github /> &nbsp;Github</Card.Title></Link>
                         <Card.Text>
                             Get insights into the code of QuickQuery
                         </Card.Text>

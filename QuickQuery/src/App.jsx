@@ -4,6 +4,9 @@ import QuickQuery from "./pages/quickquery";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Querysnippet from "./pages/querysnippets";
 import Features from "./pages/features";
+import { Link } from "react-router-dom";
+import Community from "./pages/community";
+
 
 
 
@@ -16,6 +19,7 @@ function App(){
       <Route path="quickquery" element={<QuickQuery />} />
       <Route path="querysnippet" element={<Querysnippet />} />
       <Route path="features" element={<Features />} />
+      <Route path="community" element={<Community />} />
       </Routes>
       </BrowserRouter>
     </>
