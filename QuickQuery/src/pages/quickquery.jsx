@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "../components/header";
 import Container from "react-bootstrap/Container"
 import {Row , Col} from "react-bootstrap"
@@ -10,7 +11,6 @@ import Highlight from 'react-highlight';
 import 'highlight.js/styles/atom-one-dark.css';
 
 
-
 function QuickQuery(){
     const [content, setContent] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
@@ -20,7 +20,34 @@ function QuickQuery(){
     const [selectedLanguage, setSelectedLanguage] = useState('');
     const [isCopied, setIsCopied] = useState(false);
 
-    ///////////////////////////////////
+    ///////////////////////////////////////////////////////////
+
+    async function saveToMongoDB(query, generatedCode, language) {
+      try {
+        const response = await fetch('/api/save-query', {  // Update this URL to match your backend port
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            query,
+            generatedCode,
+            language,
+            timestamp: new Date(),
+          }),
+        });
+    
+        if (!response.ok) {
+          throw new Error('Failed to save query');
+        }
+    
+        const result = await response.json();
+        console.log('Query saved:', result);
+      } catch (error) {
+        console.error('Error saving query:', error);
+      }
+    }
+    //////////////////////////////////////////////////////////
 
     const model = new ChatGoogleGenerativeAI({
         modelName: "gemini-1.5-flash",
@@ -207,7 +234,7 @@ function QuickQuery(){
       const copyToClipboard = () => {
         navigator.clipboard.writeText(content).then(() => {
           setIsCopied(true);
-          setTimeout(() => setIsCopied(false)); // Reset after 2 seconds
+          setTimeout(() => setIsCopied(false), 4000); // Reset after 2 seconds
         });
       };
 
@@ -226,6 +253,9 @@ function QuickQuery(){
         try {
           const generatedText = await fetchBotReply(database, collection, query, selectedLanguage);
           setContent(generatedText);
+          
+          // Save the query and generated code to MongoDB
+          await saveToMongoDB(query, generatedText, selectedLanguage);
         } catch (error) {
           console.error("Error generating code:", error);
           setContent("An error occurred while generating the code.");
