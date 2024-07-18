@@ -34,7 +34,7 @@ function Header() {
         <Link to="/features" className="link">Features &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Link to="https://github.com/srivanik8/QuickQuery" className="link">Github</Link>
+        <Link to="https://github.com/srivanik8/QuickQuery" className="linkk">Github</Link>
       </Nav.Item>
     </Nav>
           </Col>
