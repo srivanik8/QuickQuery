@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { DatabaseZap } from 'lucide-react';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
+
 
 
 import Stack from 'react-bootstrap/Stack';
@@ -26,10 +28,10 @@ function Header() {
           <Col xs={8}>
           <Nav defaultActiveKey="/home" as="ul" style={{fontFamily: "sora" , fontWeight: 600}}>
       <Nav.Item as="li">
-        <Nav.Link href="/" style={{color: "black"}}>Home</Nav.Link>
+        <Nav.Link href="/" style={{color: "black"}}><Link to="/" className="link"> Home</Link></Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link href="/features" eventKey="link-1" style={{color: "black"}}>Features</Nav.Link>
+        <Nav.Link href="/features" eventKey="link-1" style={{color: "black"}}><Link to="/features" className="link">Features</Link></Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
         <Nav.Link href="https://github.com/srivanik8/QuickQuery" eventKey="link-2" style={{color: "black"}}>Github</Nav.Link>
