@@ -32,7 +32,7 @@ function Features(){
                         <Card.Body>
                         <Link className="link" to="/quickquery"><Card.Title><DatabaseZap /> &nbsp;QuickQuery</Card.Title></Link>
                         <Card.Text>
-                            Craft queries in seconds in your preferred coding language.
+                            Craft queries in seconds in your preferred coding language
                         </Card.Text>
                         </Card.Body>
                     </Card>
