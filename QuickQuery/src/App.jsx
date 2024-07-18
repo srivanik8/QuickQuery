@@ -6,6 +6,8 @@ import Querysnippet from "./pages/querysnippets";
 import Features from "./pages/features";
 import { Link } from "react-router-dom";
 import Community from "./pages/community";
+import Button from "./components/button";
+import Buttonbox from "./components/button";
 
 
 
@@ -20,6 +22,7 @@ function App(){
       <Route path="querysnippet" element={<Querysnippet />} />
       <Route path="features" element={<Features />} />
       <Route path="community" element={<Community />} />
+      <Route path="button" element={<Buttonbox />} />
       </Routes>
       </BrowserRouter>
     </>

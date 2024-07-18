@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/header";
 import Container from 'react-bootstrap/Container';
 import { ArrowRight } from 'lucide-react';
+import Buttonbox from "../components/button";
 
 
 function Home(){
@@ -26,7 +27,7 @@ function Home(){
                     <h4 style={{  fontSize: 15}}>your database management with our intuitive tool</h4>
                     <h4 style={{  fontSize: 15}}>designed for speed and accuracy.</h4>
                     <br />
-                    <button style= {{borderRadius : 120 , fontFamily: "manrope"}}>Get Started &nbsp;<ArrowRight /></button>
+                    <Buttonbox>Get Started</Buttonbox>
                     <br />
                     <br />
                     <br />

@@ -313,3 +313,9 @@ button{
 .post small {
   color: #666;
 }
+/***********************************responsiveness - home page *******************************************/
+
+.right > img{
+  max-width: 100%;
+  height: auto;
+}
