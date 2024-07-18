@@ -3,6 +3,7 @@ import '../App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { DatabaseZap } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 import Stack from 'react-bootstrap/Stack';
@@ -17,7 +18,7 @@ function Header() {
       <Row>
           <Col>
             <Stack direction="horizontal" gap={3}>
-              <div ><img src="https://i.ibb.co/HrTXD3t/database-9343953.png" alt="logo" className="logo"/></div>
+              <DatabaseZap style={{color: "#359335"}} />
               <div className="p-2"><h3 className="title">QuickQuery</h3></div>
             </Stack>
           </Col>
@@ -30,9 +31,6 @@ function Header() {
             <Link className="link" to="https://github.com/srivanik8/QuickQuery"><li>Github</li></Link>
             </ul>
           </nav>
-          </Col>
-          <Col>
-            <button style= {{borderRadius : 120 , fontFamily: "manrope"}}>Sign in</button>
           </Col>
           </Row>
       </Container>
