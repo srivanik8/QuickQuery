@@ -238,12 +238,11 @@ button{
 }
 /********************************************FEATURES PAGE***********************************************/
 .grid{
-  margin-top: 20px;
-  margin-left: 15%;
   display: grid;
-  grid-template-columns: repeat(3 , 0.25fr);
-  row-gap: 30px;
-  column-gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(2 , 0.25fr);
+  row-gap: 5%;
+  column-gap: 5%;
   cursor: pointer;
 }
 .gradient-text {
@@ -257,9 +256,16 @@ button{
   text-align: center;
   font-family: "manrope";
 }
+
 .link{
   text-decoration: none;
   color: black;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -306,9 +312,7 @@ button{
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.post p {
-  margin: 0 0 10px 0;
-}
+
 
 .post small {
   color: #666;

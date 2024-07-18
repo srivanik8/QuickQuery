@@ -9,14 +9,3 @@ Currently, two official plugins are available:
 
 <Spinner animation="grow" style={{ marginLeft: 350  , width: 50 , height: 50}} />
 
-the above file is giving the error i mentioned before , and the backend server is in a seperate index.mjs file containing the express and mongodb code
-
-
-<nav>
-            <ul className="sora">
-            <Link className="link" to="/"><li>Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></Link>
-            <Link className="link" to="/features"><li>Features &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></Link>
-            <Link className="link" to="https://www.mongodb.com/community/"><li>Community &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></Link>
-            <Link className="link" to="https://github.com/srivanik8/QuickQuery"><li>Github</li></Link>
-            </ul>
-          </nav>

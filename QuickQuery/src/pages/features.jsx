@@ -22,10 +22,13 @@ function Features(){
                 <div >
                     <br />
                     <br />
-                    <h1 class="gradient-text">Unleash the Features!</h1>
-                    <p style={{ color: "white" , width: "700px" , textAlign: "center" , marginLeft: 300 , fontFamily: "manrope" , color: "#ded6d6" , fontWeight: 600 , fontSize: 13}}>Streamline Your MongoDB Workflows with Effortless Query Generation and Assistance. Boost productivity and simplify database management with our powerful tool, designed to help you generate precise MongoDB queries in NO TIME!</p>
+                    <div className="text">
+                    <h1 className="gradient-text">Unleash the Features!</h1>
+                    <p style={{  width: "63%" , fontFamily: "manrope" , color: "#ded6d6" , fontWeight: 600 , fontSize: 13 , textAlign: "center"}}>Streamline Your MongoDB Workflows with Effortless Query Generation and Assistance. Boost productivity and simplify database management with our powerful tool, designed to help you generate precise MongoDB queries in NO TIME!</p>
+
+                    </div>
                     <div className="grid">
-                    <Card border="light" style={{ width: '18rem'  , fontFamily: "manrope" , fontWeight: "700"}}>
+                    <Card border="light" style={{  fontFamily: "manrope" , fontWeight: "700"}}>
                         <Card.Body>
                         <Link className="link" to="/quickquery"><Card.Title><DatabaseZap /> &nbsp;QuickQuery</Card.Title></Link>
                         <Card.Text>
@@ -33,7 +36,7 @@ function Features(){
                         </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
+                    <Card border="light" style={{  fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
                         <Link className="link" to="/querysnippet"><Card.Title><History /> &nbsp;QuickSnippet</Card.Title></Link>
                         <Card.Text>
@@ -41,15 +44,7 @@ function Features(){
                         </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
-                        <Card.Body>
-                        <Link className="link" to="/community"><Card.Title><Handshake /> &nbsp;Community</Card.Title></Link>
-                        <Card.Text>
-                            Join a global community of developers
-                        </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
+                    <Card border="light" style={{  fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
                         <Link className="link" to="https://www.mongodb.com/docs/"><Card.Title><FileCode /> &nbsp;Documentation</Card.Title></Link>
                         <Card.Text>
@@ -57,7 +52,7 @@ function Features(){
                         </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card border="light" style={{ width: '18rem' , fontFamily: "manrope" , fontWeight: "700" }}>
+                    <Card border="light" style={{  fontFamily: "manrope" , fontWeight: "700" }}>
                         <Card.Body>
                         <Link className="link" to="https://github.com/srivanik8/QuickQuery"><Card.Title><Github /> &nbsp;Github</Card.Title></Link>
                         <Card.Text>

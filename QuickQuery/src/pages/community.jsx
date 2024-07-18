@@ -110,7 +110,7 @@ function Community(){
             <br />
             <h1 style={{fontSize: 40}} className="gradient-text">Come for the products, Stay for the COMMUNITY</h1>
             <br />
-            <p style={{ color: "white" , width: "900px" , textAlign: "left" , marginLeft: 300 , fontFamily: "manrope" , color: "black" , fontWeight: 600 , fontSize: 17}}>
+            <p style={{ width: "900px" , textAlign: "left" , marginLeft: 300 , fontFamily: "manrope" , color: "black" , fontWeight: 600 , fontSize: 17}}>
             The Community Forums is a wonderful place to discuss anything related to learning, using, developing, or otherwise working with MongoDB products, services, and ecosystem.
             </p>
             
