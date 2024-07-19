@@ -12,7 +12,6 @@ import 'highlight.js/styles/atom-one-dark.css';
 
 
 function QuickQuery(){
-  dotenv.config();
     const [content, setContent] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
     const [database, setDataBase] = useState('');
@@ -48,11 +47,10 @@ function QuickQuery(){
       }
     }
     //////////////////////////////////////////////////////////
-    const APIKEY = import.meta.env.VITE_APIKEY
     const model = new ChatGoogleGenerativeAI({
         modelName: "gemini-1.5-flash",
         maxOutputTokens: 2048,
-        apikey : APIKEY ,
+        apikey :"AIzaSyCZ7YpN_LGG4V73cvYUMFcaZ6fAr_ELGng" ,
       });
       
       async function fetchBotReply(database , collection , query , language) {
