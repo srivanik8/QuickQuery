@@ -1,5 +1,5 @@
 import React from "react";
-
+import dotenv from 'dotenv';
 import Header from "../components/header";
 import Container from "react-bootstrap/Container"
 import {Row , Col} from "react-bootstrap"
@@ -12,6 +12,7 @@ import 'highlight.js/styles/atom-one-dark.css';
 
 
 function QuickQuery(){
+  dotenv.config();
     const [content, setContent] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
     const [database, setDataBase] = useState('');
@@ -21,7 +22,6 @@ function QuickQuery(){
     const [isCopied, setIsCopied] = useState(false);
 
     ///////////////////////////////////////////////////////////
-
     async function saveToMongoDB(query, generatedCode, language) {
       try {
         const response = await fetch('/api/save-query', {  // Update this URL to match your backend port
@@ -48,11 +48,11 @@ function QuickQuery(){
       }
     }
     //////////////////////////////////////////////////////////
-
+    const APIKEY = import.meta.env.VITE_APIKEY
     const model = new ChatGoogleGenerativeAI({
         modelName: "gemini-1.5-flash",
         maxOutputTokens: 2048,
-        apiKey: "AIzaSyCZ7YpN_LGG4V73cvYUMFcaZ6fAr_ELGng",
+        apikey : APIKEY ,
       });
       
       async function fetchBotReply(database , collection , query , language) {
