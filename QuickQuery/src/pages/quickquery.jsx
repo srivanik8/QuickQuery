@@ -50,7 +50,7 @@ function QuickQuery(){
     const model = new ChatGoogleGenerativeAI({
         modelName: "gemini-1.5-flash",
         maxOutputTokens: 2048,
-        apikey :"AIzaSyCZ7YpN_LGG4V73cvYUMFcaZ6fAr_ELGng" ,
+        apikey : 'AIzaSyCZ7YpN_LGG4V73cvYUMFcaZ6fAr_ELGng' ,
       });
       
       async function fetchBotReply(database , collection , query , language) {
