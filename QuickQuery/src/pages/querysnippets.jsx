@@ -1,9 +1,7 @@
 import React from "react";
 import Header from "../components/header";  
-import Container from 'react-bootstrap/Container';
 import { useState  , useEffect} from "react";
 import Highlight from 'react-highlight';
-import { Grid, Repeat } from "lucide-react";
 import { RotateCcw } from 'lucide-react';
 
 
