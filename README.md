@@ -20,3 +20,5 @@ The journey continues for QuickQuery! We plan to expand our community, host more
 5. Install the required libraries(highlighter, bootstrap, lucida, google@generativeai, langchain, mongoDB) using `npm install <package-name>`.
 6. first run the server - to run the server - run command `cd pages`  , `cd src` , `node index.mjs` (you can see that the server run's succesfully)
 7. Run command `npm run dev` to start the application
+
+## OPEN FOR CONTRIBUTIONS 👩🏽‍💼
