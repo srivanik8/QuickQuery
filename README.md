@@ -11,3 +11,12 @@ I faced several challenges while working with Express servers, as it was my firs
 
 ## What's next for QuickQuery
 The journey continues for QuickQuery! We plan to expand our community, host more engaging  events, and feature even more resources in the application. Additionally, we're exploring folks interested in building a diverse community. Our ultimate goal is to become the go-to resource for mongoDB and help folks build mongoDB applications,by continuously enhancing the support and information we provide. Stay tuned for an exciting journey ahead!
+
+## Setup of local environment
+1. Fork this repo.
+2. Run the command `git clone https://github.com/srivanik8/QuickQuery.git`
+3. Run command `cd QuickQuery`.
+4. Run command `npm install vite`.
+5. Install the required libraries(highlighter, bootstrap, lucida, google@generativeai, langchain, mongoDB) using `npm install <package-name>`.
+6. first run the server - to run the server - run command `cd pages`  , `cd src` , `node index.mjs` (you can see that the server run's succesfully)
+7. Run command `npm run dev` to start the application
